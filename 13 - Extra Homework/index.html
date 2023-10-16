@@ -1,0 +1,2332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Netflix</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <!-- left to right -->
+            <a class="navbar-brand" href="#"><img class="netflix-logo" src="assets/imgs/netflix-logo.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link active link-light" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-light link-opacity-75-hover" href="#">TV Shows</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-light link-opacity-75-hover" href="#">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-light link-opacity-75-hover" href="#">New & Popular</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-light link-opacity-75-hover" href="#">My LIst</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-light link-opacity-75-hover" href="#">Browse by Languages</a>
+                    </li>
+                </ul>
+
+
+
+                <!-- 2nd left to right -->
+                <div class="d-flex ">
+                    <!-- search -->
+                    <input class="form-control " type="search" placeholder="Titles, people, genres">
+                    <button onclick="openSearch()" class="btn link-light"><img class="search"
+                            src="assets/imgs/search.png"></button>
+                </div>
+
+                <!-- kids icon -->
+                <a class="m-2 nav-link link-light link-opacity-75-hover" href="#">Kids </a>
+
+                <!-- notifications -->
+                <div class="dropdown nav-link">
+                    <a class=" nav-link dropdown-toggl link-light link-opacity-75-hover" type="button"
+                        id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false"
+                        data-bs-toggle="dropdown" href="#"><img class="bell" src="assets/imgs/bell.png"></a>
+                    <div class="dropdown-menu notifs m-3" aria-labelledby="dropdownMenuButton">
+
+                        <div><img class="preview-img" src="assets/imgs/1.png"></div>
+                        <div class="preview-text">
+                            <h3 class="">Blues</h3>
+                            <p>2 Days ago</p>
+                        </div>
+                        <hr>
+                        <div><img class="preview-img" src="assets/imgs/2.png"></div>
+                        <div class="preview-text">
+                            <h3 class="">Olives</h3>
+                            <p>3 Days ago</p>
+                        </div>
+                        <hr>
+                        <div><img class="preview-img" src="assets/imgs/3.png"></div>
+                        <div class="preview-text">
+                            <h3 class="">Gardening</h3>
+                            <p>5 Days ago</p>
+                        </div>
+                        <hr>
+                        <div><img class="preview-img" src="assets/imgs/4.png"></div>
+                        <div class="preview-text">
+                            <h3 class="">Painting</h3>
+                            <p>1 Week ago</p>
+                        </div>
+                        <hr>
+                        <div><img class="preview-img" src="assets/imgs/5.png"></div>
+                        <div class="preview-text">
+                            <h3 class="">Bikes</h3>
+                            <p>2 Weeks ago</p>
+                        </div>
+                        <hr>
+                        <div><img class="preview-img" src="assets/imgs/6.png"></div>
+                        <div class="preview-text">
+                            <h3 class="">Lavender Haze</h3>
+                            <p>2 Weeks ago</p>
+                        </div>
+                        <hr>
+                        <div><img class="preview-img" src="assets/imgs/7.png"></div>
+                        <div class="preview-text">
+                            <h3 class="">Bread</h3>
+                            <p>2 Weeks ago</p>
+                        </div>
+                        <hr>
+                        <div><img class="preview-img" src="assets/imgs/8.png"></div>
+                        <div class="preview-text">
+                            <h3 class="">Anatomy</h3>
+                            <p>2 Weeks ago</p>
+                        </div>
+                        <hr>
+                        <div><img class="preview-img" src="assets/imgs/9.png"></div>
+                        <div class="preview-text">
+                            <h3 class="">Inside</h3>
+                            <p>3 Weeks ago</p>
+                        </div>
+                        <hr>
+                        <div><img class="preview-img" src="assets/imgs/5.png"></div>
+                        <div class="preview-text">
+                            <h3 class="">Bikes</h3>
+                            <p>2 Weeks ago</p>
+                        </div>
+                        <hr>
+                        <div><img class="preview-img" src="assets/imgs/6.png"></div>
+                        <div class="preview-text">
+                            <h3 class="">Lavender Haze</h3>
+                            <p>2 Weeks ago</p>
+                        </div>
+                        <hr>
+                        <div><img class="preview-img" src="assets/imgs/7.png"></div>
+                        <div class="preview-text">
+                            <h3 class="">Bread</h3>
+                            <p>2 Weeks ago</p>
+                        </div>
+                        <hr>
+                        <div><img class="preview-img" src="assets/imgs/8.png"></div>
+                        <div class="preview-text">
+                            <h3 class="">Anatomy</h3>
+                            <p>2 Weeks ago</p>
+                        </div>
+                        <hr>
+                        <div><img class="preview-img" src="assets/imgs/9.png"></div>
+                        <div class="preview-text">
+                            <h3 class="">Inside</h3>
+                            <p>3 Weeks ago</p>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+                <!-- users -->
+                <div class="dropdown me-4 nav-link">
+                    <button class="btn dropdown-toggle link-light" type="button" id="dropdownMenuButton"
+                        data-mdb-toggle="dropdown" aria-expanded="false" data-bs-toggle="dropdown">
+                        <img class="user" src="assets/imgs/user1.png">
+                    </button>
+                    <ul class="dropdown-menu m-1" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#"><img class="user" src="assets/imgs/user2.png"> Assaf</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#"><img class="user" src="assets/imgs/user3.png">Ohad</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#"><img class="user" src="assets/imgs/user4.png">Shani</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#"><img class="user" src="assets/imgs/pencil.png">Manage
+                                Profiles</a></li>
+                        <li><a class="dropdown-item" href="#"><img class="user" src="assets/imgs/square.png">Transfer
+                                Profile</a></li>
+                        <li><a class="dropdown-item" href="#"><img class="user" src="assets/imgs/user.png">Account</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#"><img class="user" src="assets/imgs/qmark.png">Help
+                                Center</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Sign out of Netflix</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+
+        <video onload="vidEnd()" src="assets/vids/Untitled video - Made with Clipchamp.mp4" autoplay class="video"></video>
+
+         <div class="fader">
+            <div id="fade"></div>
+            <div id="fade"></div>
+            <div id="fade"></div>
+            <div id="fade"></div>
+            <div id="fade"></div>
+            <div id="fade"></div>
+
+        </div> 
+
+        <div class="main-show"> <!-- main text -->
+            <img class="thumb" src="assets/imgs/main text.png">
+            <p class="thumbtext"> The story of Bella Swan, who moves to Forks, Washington, and falls in love with the
+                enigmatic vampire Edward Cullen. The movie explores their unconventional love and the challenges it
+                brings.</p>
+            <div class="main-btns">
+                <button type="button" class="btn play btn-light"><img class="play-btn" src="assets/imgs/play1.png">&nbsp
+                    Play</button>
+                <button type="button" class="btn  btn-secondary text-white info"><img class="info-btn"
+                        src="assets/imgs/info.png">&nbsp More Info</button>
+            </div>
+        </div>
+
+        <div class="slider-box slider-box1">
+            <section class="container-fluid slider2">
+                <div class="d-flex justify-content-between" style="width: 95%;">
+                    <p class="text-white">&nbsp <b>Trending </b></p>
+
+                    <div class="navi1">
+                        <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                </div>
+                <!--  -->
+                <div id="carouselExampleIndicators1" class="carousel slide">
+
+                    <div class="carousel-inner" style="position: relative; overflow: visible;">
+                        <!-- 1st slide -->
+                        <div class="carousel-item active">
+                            <section class="d-flex" style="position: absolute;">
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">94% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">1hr
+                                                27m</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">4K</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">Dolby</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Israeli <span style="color: grey;">•</span>
+                                            Agriculture <span style="color: grey;">•</span> Drama</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/3.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">96% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text m-2"> 12
+                                                Episodes</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">4K</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Psychological Horror <span
+                                                style="color: grey;">•</span>
+                                            Home-made <span style="color: grey;">•</span> Inspiring</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/6.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">100% match</p>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">14+</span>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">13
+                                                Seasons</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">8K</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Treacherous <span
+                                                style="color: grey;">•</span>
+                                            Delicate <span style="color: grey;">•</span> Gorgeous</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/4.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">93% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">
+                                                45 Minutes</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">720p</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">History <span style="color: grey;">•</span>
+                                            B-roll Fest <span style="color: grey;">•</span> Hilarious</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/7.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">77% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">97
+                                                Seasons</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">144p</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Yeasty <span style="color: grey;">•</span>
+                                            Smells Good <span style="color: grey;">•</span> Floury</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/8.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">-97% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">5hrs
+                                                2m</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">3D</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Comedy <span style="color: grey;">•</span>
+                                            Bloody <span style="color: grey;">•</span> Philosophical</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card last">
+                                    <img src="assets/imgs/9.png" class="card-img-top " alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">99.4% match
+                                            </p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">2 hrs</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">4K</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Depressing <span
+                                                style="color: grey;">•</span>
+                                            Interesting <span style="color: grey;">•</span> Visible</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+                            </section>
+                        </div>
+                        <!-- 2nd slide -->
+                        <div class="carousel-item">
+                            <section class="d-flex" style="position: absolute;">
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/9.png" class="card-img-top " alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">99.4% match
+                                            </p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">2 hrs</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">4K</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Depressing <span
+                                                style="color: grey;">•</span>
+                                            Interesting <span style="color: grey;">•</span> Visible</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/7.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">77% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">97
+                                                Seasons</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">144p</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Yeasty <span style="color: grey;">•</span>
+                                            Smells Good <span style="color: grey;">•</span> Floury</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/8.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">-97% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">5hrs
+                                                2m</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">3D</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Comedy <span style="color: grey;">•</span>
+                                            Bloody <span style="color: grey;">•</span> Philosophical</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/6.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">100% match</p>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">14+</span>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">13
+                                                Seasons</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">8K</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Treacherous <span
+                                                style="color: grey;">•</span>
+                                            Delicate <span style="color: grey;">•</span> Gorgeous</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">94% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">1hr
+                                                27m</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">4K</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">Dolby</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Israeli <span style="color: grey;">•</span>
+                                            Agriculture <span style="color: grey;">•</span> Drama</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/5.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">98% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">1hr
+                                                37m</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">HD</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Eco-Friendly <span
+                                                style="color: grey;">•</span>
+                                            Dutch <span style="color: grey;">•</span> Documentary</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card last">
+                                    <img src="assets/imgs/1.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">97% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">3
+                                                Episodes</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">4K</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Colorful <span style="color: grey;">•</span>
+                                            Basic <span style="color: grey;">•</span> Pointless</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+                            </section>
+                        </div>
+                        <!-- 3rd slide -->
+                        <div class="carousel-item">
+                            <section class="d-flex" style="position: absolute;">
+                                <!-- card -->
+                                <div class="card last">
+                                    <img src="assets/imgs/1.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">97% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">3
+                                                Episodes</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">4K</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Colorful <span style="color: grey;">•</span>
+                                            Basic <span style="color: grey;">•</span> Pointless</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/3.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">96% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text m-2"> 12
+                                                Episodes</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">4K</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Psychological Horror <span
+                                                style="color: grey;">•</span>
+                                            Home-made <span style="color: grey;">•</span> Inspiring</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/6.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">100% match</p>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">14+</span>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">13
+                                                Seasons</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">8K</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Treacherous <span
+                                                style="color: grey;">•</span>
+                                            Delicate <span style="color: grey;">•</span> Gorgeous</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/4.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">93% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">
+                                                45 Minutes</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">720p</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">History <span style="color: grey;">•</span>
+                                            B-roll Fest <span style="color: grey;">•</span> Hilarious</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/7.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">77% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">97
+                                                Seasons</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">144p</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Yeasty <span style="color: grey;">•</span>
+                                            Smells Good <span style="color: grey;">•</span> Floury</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/8.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">-97% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">5hrs
+                                                2m</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">3D</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Comedy <span style="color: grey;">•</span>
+                                            Bloody <span style="color: grey;">•</span> Philosophical</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card last">
+                                    <img src="assets/imgs/2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">94% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">1hr
+                                                27m</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">4K</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">Dolby</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Israeli <span style="color: grey;">•</span>
+                                            Agriculture <span style="color: grey;">•</span> Drama</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+                            </section>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev car-navi1"
+                        style="position: absolute; left: -8.5vw; top: 4.5vw;" type="button"
+                        data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next car-navi1" style="position: absolute; left: 88vw; top: 4.5vw;"
+                        type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+        </div>
+
+        <div class="slider-box slider-box2"> <!--eli's line -->
+            <section class="container-fluid slider1 ">
+                <div class="d-flex justify-content-between" style="width: 95%;">
+                    <p class="text-white">&nbsp <b>Continue Watching for Eli </b></p>
+                    <div class="navi2">
+                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                </div>
+                <!--  -->
+                <div id="carouselExampleIndicators2" class="carousel slide">
+
+                    <div class="carousel-inner" style="position: relative; overflow: visible;">
+                        <!-- 1st slide -->
+                        <div class="carousel-item active">
+                            <section class="d-flex" style="position: absolute;">
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/5.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">98% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">1hr
+                                                37m</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">HD</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Eco-Friendly <span
+                                                style="color: grey;">•</span>
+                                            Dutch <span style="color: grey;">•</span> Documentary</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/6.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">100% match</p>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">14+</span>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">13
+                                                Seasons</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">8K</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Treacherous <span
+                                                style="color: grey;">•</span>
+                                            Delicate <span style="color: grey;">•</span> Gorgeous</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+                            </section>
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev car-navi2"
+                        style="position: absolute; left: -8.5vw; top: 4.5vw;" type="button"
+                        data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next car-navi2" style="position: absolute; left: 88vw; top: 4.5vw;"
+                        type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+        </div>
+
+        <div class="slider-box slider-box3">
+            <section class="container-fluid slider3 ">
+                <div class="d-flex justify-content-between" style="width: 95%;">
+                    <p class="text-white">&nbsp <b>Comedy </b></p>
+                    <div class="navi3">
+                        <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                </div>
+                <!--  -->
+                <div id="carouselExampleIndicators3" class="carousel slide">
+
+                    <div class="carousel-inner" style="position: relative; overflow: visible;">
+                        <!-- 1st slide -->
+                        <div class="carousel-item active">
+                            <section class="d-flex" style="position: absolute;">
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">94% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">1hr
+                                                27m</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">4K</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">Dolby</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Israeli <span style="color: grey;">•</span>
+                                            Agriculture <span style="color: grey;">•</span> Drama</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/3.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">96% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text m-2"> 12
+                                                Episodes</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">4K</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Psychological Horror <span
+                                                style="color: grey;">•</span>
+                                            Home-made <span style="color: grey;">•</span> Inspiring</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/6.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">100% match</p>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">14+</span>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">13
+                                                Seasons</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">8K</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Treacherous <span
+                                                style="color: grey;">•</span>
+                                            Delicate <span style="color: grey;">•</span> Gorgeous</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/4.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">93% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">
+                                                45 Minutes</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">720p</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">History <span style="color: grey;">•</span>
+                                            B-roll Fest <span style="color: grey;">•</span> Hilarious</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/7.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">77% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">97
+                                                Seasons</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">144p</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Yeasty <span style="color: grey;">•</span>
+                                            Smells Good <span style="color: grey;">•</span> Floury</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/8.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">-97% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">5hrs
+                                                2m</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">3D</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Comedy <span style="color: grey;">•</span>
+                                            Bloody <span style="color: grey;">•</span> Philosophical</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card last">
+                                    <img src="assets/imgs/9.png" class="card-img-top " alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">99.4% match
+                                            </p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">2 hrs</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">4K</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Depressing <span
+                                                style="color: grey;">•</span>
+                                            Interesting <span style="color: grey;">•</span> Visible</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+                            </section>
+                        </div>
+                        <!-- 2nd slide -->
+                        <div class="carousel-item">
+                            <section class="d-flex" style="position: absolute;">
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/9.png" class="card-img-top " alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">99.4% match
+                                            </p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">2 hrs</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">4K</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Depressing <span
+                                                style="color: grey;">•</span>
+                                            Interesting <span style="color: grey;">•</span> Visible</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/7.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">77% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">97
+                                                Seasons</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">144p</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Yeasty <span style="color: grey;">•</span>
+                                            Smells Good <span style="color: grey;">•</span> Floury</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/8.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">-97% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">5hrs
+                                                2m</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">3D</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Comedy <span style="color: grey;">•</span>
+                                            Bloody <span style="color: grey;">•</span> Philosophical</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/6.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">100% match</p>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">14+</span>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">13
+                                                Seasons</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">8K</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Treacherous <span
+                                                style="color: grey;">•</span>
+                                            Delicate <span style="color: grey;">•</span> Gorgeous</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">94% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">1hr
+                                                27m</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">4K</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">Dolby</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Israeli <span style="color: grey;">•</span>
+                                            Agriculture <span style="color: grey;">•</span> Drama</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/5.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">98% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">1hr
+                                                37m</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">HD</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Eco-Friendly <span
+                                                style="color: grey;">•</span>
+                                            Dutch <span style="color: grey;">•</span> Documentary</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card last">
+                                    <img src="assets/imgs/1.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">97% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">3
+                                                Episodes</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">4K</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Colorful <span style="color: grey;">•</span>
+                                            Basic <span style="color: grey;">•</span> Pointless</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+                            </section>
+                        </div>
+                        <!-- 3rd slide -->
+                        <div class="carousel-item">
+                            <section class="d-flex" style="position: absolute;">
+                                <!-- card -->
+                                <div class="card last">
+                                    <img src="assets/imgs/1.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">97% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">3
+                                                Episodes</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">4K</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Colorful <span style="color: grey;">•</span>
+                                            Basic <span style="color: grey;">•</span> Pointless</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/3.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">96% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text m-2"> 12
+                                                Episodes</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">4K</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Psychological Horror <span
+                                                style="color: grey;">•</span>
+                                            Home-made <span style="color: grey;">•</span> Inspiring</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/6.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">100% match</p>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">14+</span>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">13
+                                                Seasons</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">8K</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Treacherous <span
+                                                style="color: grey;">•</span>
+                                            Delicate <span style="color: grey;">•</span> Gorgeous</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/4.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">93% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">
+                                                45 Minutes</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">720p</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">History <span style="color: grey;">•</span>
+                                            B-roll Fest <span style="color: grey;">•</span> Hilarious</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/7.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">77% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">97
+                                                Seasons</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">144p</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Yeasty <span style="color: grey;">•</span>
+                                            Smells Good <span style="color: grey;">•</span> Floury</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/8.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">-97% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">5hrs
+                                                2m</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">3D</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Comedy <span style="color: grey;">•</span>
+                                            Bloody <span style="color: grey;">•</span> Philosophical</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card last">
+                                    <img src="assets/imgs/2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">94% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">1hr
+                                                27m</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">4K</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">Dolby</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Israeli <span style="color: grey;">•</span>
+                                            Agriculture <span style="color: grey;">•</span> Drama</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+                            </section>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev car-navi3"
+                        style="position: absolute; left: -8.5vw; top: 4.5vw;" type="button"
+                        data-bs-target="#carouselExampleIndicators3" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next car-navi3" style="position: absolute; left: 88vw; top: 4.5vw;"
+                        type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+        </div>
+
+        <div class="slider-box slider-box4">
+            <section class="container-fluid slider4 ">
+                <div class="d-flex justify-content-between" style="width: 95%;">
+                    <p class="text-white">&nbsp <b>Movies Including The Word 'Moist' </b></p>
+                    <div class="navi4">
+                        <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                </div>
+                <!--  -->
+                <div id="carouselExampleIndicators4" class="carousel slide">
+
+                    <div class="carousel-inner" style="position: relative; overflow: visible;">
+                        <!-- 1st slide -->
+                        <div class="carousel-item active">
+                            <section class="d-flex" style="position: absolute;">
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">94% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">1hr
+                                                27m</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">4K</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">Dolby</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Israeli <span style="color: grey;">•</span>
+                                            Agriculture <span style="color: grey;">•</span> Drama</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/3.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">96% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text m-2"> 12
+                                                Episodes</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">4K</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Psychological Horror <span
+                                                style="color: grey;">•</span>
+                                            Home-made <span style="color: grey;">•</span> Inspiring</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/6.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">100% match</p>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">14+</span>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">13
+                                                Seasons</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">8K</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Treacherous <span
+                                                style="color: grey;">•</span>
+                                            Delicate <span style="color: grey;">•</span> Gorgeous</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/4.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">93% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">
+                                                45 Minutes</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">720p</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">History <span style="color: grey;">•</span>
+                                            B-roll Fest <span style="color: grey;">•</span> Hilarious</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/7.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">77% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">97
+                                                Seasons</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">144p</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Yeasty <span style="color: grey;">•</span>
+                                            Smells Good <span style="color: grey;">•</span> Floury</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/8.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">-97% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">5hrs
+                                                2m</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">3D</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Comedy <span style="color: grey;">•</span>
+                                            Bloody <span style="color: grey;">•</span> Philosophical</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card last">
+                                    <img src="assets/imgs/9.png" class="card-img-top " alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">99.4% match
+                                            </p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">2 hrs</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">4K</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Depressing <span
+                                                style="color: grey;">•</span>
+                                            Interesting <span style="color: grey;">•</span> Visible</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+                            </section>
+                        </div>
+                        <!-- 2nd slide -->
+                        <div class="carousel-item">
+                            <section class="d-flex" style="position: absolute;">
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/9.png" class="card-img-top " alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">99.4% match
+                                            </p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">2 hrs</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">4K</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Depressing <span
+                                                style="color: grey;">•</span>
+                                            Interesting <span style="color: grey;">•</span> Visible</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/7.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">77% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">97
+                                                Seasons</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">144p</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Yeasty <span style="color: grey;">•</span>
+                                            Smells Good <span style="color: grey;">•</span> Floury</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/8.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">-97% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">5hrs
+                                                2m</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">3D</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Comedy <span style="color: grey;">•</span>
+                                            Bloody <span style="color: grey;">•</span> Philosophical</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/6.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">100% match</p>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">14+</span>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">13
+                                                Seasons</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">8K</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Treacherous <span
+                                                style="color: grey;">•</span>
+                                            Delicate <span style="color: grey;">•</span> Gorgeous</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">94% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">1hr
+                                                27m</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">4K</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">Dolby</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Israeli <span style="color: grey;">•</span>
+                                            Agriculture <span style="color: grey;">•</span> Drama</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/5.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">98% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">1hr
+                                                37m</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">HD</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Eco-Friendly <span
+                                                style="color: grey;">•</span>
+                                            Dutch <span style="color: grey;">•</span> Documentary</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card last">
+                                    <img src="assets/imgs/1.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">97% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">3
+                                                Episodes</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">4K</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Colorful <span style="color: grey;">•</span>
+                                            Basic <span style="color: grey;">•</span> Pointless</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+                            </section>
+                        </div>
+                        <!-- 3rd slide -->
+                        <div class="carousel-item">
+                            <section class="d-flex" style="position: absolute;">
+                                <!-- card -->
+                                <div class="card last">
+                                    <img src="assets/imgs/1.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">97% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">3
+                                                Episodes</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">4K</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Colorful <span style="color: grey;">•</span>
+                                            Basic <span style="color: grey;">•</span> Pointless</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/3.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">96% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text m-2"> 12
+                                                Episodes</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">4K</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Psychological Horror <span
+                                                style="color: grey;">•</span>
+                                            Home-made <span style="color: grey;">•</span> Inspiring</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/6.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">100% match</p>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">14+</span>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">13
+                                                Seasons</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">8K</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Treacherous <span
+                                                style="color: grey;">•</span>
+                                            Delicate <span style="color: grey;">•</span> Gorgeous</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/4.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">93% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">
+                                                45 Minutes</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">720p</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">History <span style="color: grey;">•</span>
+                                            B-roll Fest <span style="color: grey;">•</span> Hilarious</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/7.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">77% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">97
+                                                Seasons</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">144p</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Yeasty <span style="color: grey;">•</span>
+                                            Smells Good <span style="color: grey;">•</span> Floury</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card">
+                                    <img src="assets/imgs/8.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">-97% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">5hrs
+                                                2m</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">3D</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Comedy <span style="color: grey;">•</span>
+                                            Bloody <span style="color: grey;">•</span> Philosophical</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+
+                                <!-- card -->
+                                <div class="card last">
+                                    <img src="assets/imgs/2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <section class="d-flex justify-content-between">
+                                            <div>
+                                                <img class="icon" src="assets/imgs/play.png">
+                                                <img class="icon" src="assets/imgs/plus.png">
+                                                <img class="icon" src="assets/imgs/like.png">
+                                            </div>
+                                            <div>
+                                                <img class="icon" src="assets/imgs/down.png">
+                                            </div>
+                                        </section>
+                                        <section class="d-flex  align-items-center">
+                                            <p class="card-text ms-0 m-2" style="color: rgb(28, 198, 85)">94% match</p>
+                                            <span style="color: rgb(176, 176, 176);" class="card-text  m-2">1hr
+                                                27m</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">4K</span>
+                                            <span
+                                                style="border-radius: 4px; border: 1px solid rgb(176, 176, 176); color: rgb(176, 176, 176);"
+                                                class="card-text m-2 ps-1 pe-1">Dolby</span>
+                                        </section>
+                                        <p class="text-white m-0 card-text">Israeli <span style="color: grey;">•</span>
+                                            Agriculture <span style="color: grey;">•</span> Drama</p>
+                                    </div>
+                                </div>
+                                <!-- card-end -->
+                            </section>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev car-navi4"
+                        style="position: absolute; left: -8.5vw; top: 4.5vw;" type="button"
+                        data-bs-target="#carouselExampleIndicators4" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next car-navi4" style="position: absolute; left: 88vw; top: 4.5vw;"
+                        type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="socials">
+            <a href=""><img src="assets/imgs/facebook.png"></a>
+            <a href=""><img src="assets/imgs/instagram.png"></a>
+            <a href=""><img src="assets/imgs/youtube.png"></a>
+        </div>
+        <div class="col1">
+            <a class="dropdown-item" style="width: fit-content;color: gray;" href="">Audio Description</a>
+            <a class="dropdown-item" style="width: fit-content;color: gray;" href="">Investor Relations</a>
+            <a class="dropdown-item" style="width: fit-content;color: gray;" href="">Legal Notices</a>
+            <a class="service"
+                style="width: fit-content; margin-top: 25px; margin-bottom: 10px; border: 1px solid rgb(176, 176, 176); padding: 0px 5px;"
+                href=""> Service Code </a>
+            <div class="inc" style="width: fit-content;color: gray; font-size: small;">© 1997-2023 Netflix, Inc.</div>
+        </div>
+        <div class="col2">
+            <a class="dropdown-item" style="width: fit-content;color: gray;" href="">Help Center</a>
+            <a class="dropdown-item" style="width: fit-content;color: gray;" href="">Jobs</a>
+            <a class="dropdown-item" style="width: fit-content;color: gray;" href="">Cookie Preferences</a>
+        </div>
+        <div class="col3">
+            <a class="dropdown-item" style="width: fit-content;color: gray;" href="">Gift Cards</a>
+            <a class="dropdown-item" style="width: fit-content;color: gray;" href="">Terms of Use</a>
+            <a class="dropdown-item" style="width: fit-content;color: gray;" href="">Corporate Information</a>
+        </div>
+        <div class="col4">
+            <a class="dropdown-item" style="width: fit-content;color: gray;" href="">Media Center</a>
+            <a class="dropdown-item" style="width: fit-content;color: gray;" href="">Privacy</a>
+            <a class="dropdown-item" style="width: fit-content;color: gray;" href="">Contact Us</a>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
